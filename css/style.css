@@ -1,0 +1,136 @@
+html,
+body {
+  /* RESET */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.container section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.container section:first-child {
+  z-index: 999999;
+}
+
+.container section p {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+.container section h1 {
+  float: left;
+  padding-left: 1em;
+  font-size: 30pt;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container section.first {
+  background-color: #B71C1C;
+  align-items: center;
+}
+
+.container section.second {
+  background-color: #3F51B5;
+  align-items: center;
+}
+
+.container section.third {
+  background-color: #8BC34A;
+}
+.drone-container {
+  position: relative;
+}
+
+.camera-container {
+  position: absolute;
+  width: 60px;
+  top: 110px;
+  left: 120px;
+}
+
+.flash {
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  animation-name: flash;
+  animation-duration: 0.5ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+
+.blade {
+  position: absolute;
+  top: 46px;
+  animation-duration: 0.2s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.bladeLeft {
+  left: 5px;
+}
+
+.bladeRight {
+  left: 224px;
+}
+.logo-1
+{
+  position: absolute;
+  float: right;
+  padding-right: 1em;
+  padding-left: 60em;
+   
+}
+.logo-2 {
+    position: absolute;
+    float: right;
+    padding-right: 1em;
+    padding-left: 60em;
+    padding-bottom: 10em;
+
+}
+@keyframes spin {
+  from {
+    transform:rotateY(0deg);
+  }
+  to {
+    transform:rotateY(-360deg);
+  }
+}
+
+@keyframes flash {
+  0% {
+    fill: #fff;
+    opacity:1;
+  }
+  11% {
+    fill: #fff;
+  }
+  22% {
+    fill: #fff;
+  }
+  55% {
+    fill: yellow;
+  }
+  77% {
+    fill: yellow;
+  }
+  100% {
+    fill: #fff;
+  }
+}
