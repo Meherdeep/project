@@ -47,6 +47,7 @@ body {
 
 .container section.third {
   background-color: #8BC34A;
+  text-align: center;
 }
 .drone-container {
   position: relative;
@@ -94,7 +95,7 @@ body {
   float: right;
   padding-right: 1em;
   padding-left: 60em;
-   
+
 }
 .logo-2 {
     position: absolute;
